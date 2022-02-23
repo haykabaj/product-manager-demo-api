@@ -65,7 +65,7 @@ public class ProductClientResourceController {
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity<?> getProductById(@RequestParam(value = "pageNo",
+    public ResponseEntity<?> getProductById(@RequestParam(value = "size",
                                                     defaultValue = PagingConstants.DEFAULT_PAGE_NUMBER,
                                                     required = false) int size,
                                             @RequestParam(value = "pageSize",
